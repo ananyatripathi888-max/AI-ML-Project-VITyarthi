@@ -12,13 +12,16 @@ Features
 
 Users can choose a genre, and the system returns movies from that category.
 
+
 2. Rule-based filtering
 
 Filters results by:
 
+
 3.Minimum rating
 
 Minimum popularity
+
 
 4.Automatic fallback using K-Means clustering
 
@@ -27,6 +30,7 @@ If filtered results are fewer than 5:
 The system identifies the dominant cluster for the chosen genre
 
 And shows similar movies based on cluster grouping
+
 
 5.Preprocessing Pipeline
 
@@ -38,6 +42,7 @@ Min-Max scaling for numeric features
 
 Feature selection for clustering
 
+
 6.User-Friendly CLI Interface
 
 The system:
@@ -47,6 +52,7 @@ Displays available genres
 Takes user input
 
 Shows clean tabular output of recommendations
+
 
 7.Works with custom datasets
 
@@ -96,11 +102,13 @@ Check using:
 
 python --version
 
+
 2️. Install Required Libraries
 
 Run this in your terminal:
 
 pip install pandas numpy scikit-learn
+
 
 3️. Place the Dataset
 
@@ -110,11 +118,13 @@ movies.csv
 
 Place it in the same folder as your .py script.
 
+
 4️. Run the Program
 
 Navigate to the folder where your file is saved and run:
 
 python movie_recommender.py
+
 
 5️. Provide Inputs When Prompted
 
@@ -123,6 +133,7 @@ The program will ask:
 Enter preferred genre: Enter minimum rating (0–10): Enter minimum popularity:
 
 Enter values accordingly.
+
 
 6️. View Recommendations
 
@@ -149,6 +160,7 @@ Provide reasonable rating and popularity values:
 
 rating: 7 popularity: 20
 
+
 2️. Test Fallback Cluster Logic
 
 Enter strict filters that return fewer than 5 movies.
@@ -163,6 +175,7 @@ This will trigger:
 
 Cluster-based recommendations
 
+
 3️. Test Invalid Genre Input
 
 Enter a genre not in the dataset:
@@ -173,6 +186,7 @@ Expected output:
 
 Genre not found in dataset! Available genres: [...]
 
+
 4️. Test Boundary Values
 
 Examples:
@@ -182,6 +196,7 @@ rating = 0
 popularity = 0
 
 runtime edge cases (though runtime is not user-input)
+
 
 5️. Test Dataset Integrity Errors
 
