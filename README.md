@@ -5,6 +5,7 @@ This project is a Movie Recommendation System built using Python and machine lea
 
 The system operates on a CSV dataset containing movie titles, genres, ratings, popularity scores, and runtime. It includes preprocessing, feature scaling, genre encoding, clustering, and final recommendation generation through a simple command-line interface.
 
+
 Features
 
 1. Genre-based movie filtering
@@ -19,7 +20,7 @@ Filters results by:
 
 Minimum popularity
 
-3.Automatic fallback using K-Means clustering
+4.Automatic fallback using K-Means clustering
 
 If filtered results are fewer than 5:
 
@@ -27,7 +28,7 @@ The system identifies the dominant cluster for the chosen genre
 
 And shows similar movies based on cluster grouping
 
-4.Preprocessing Pipeline
+5.Preprocessing Pipeline
 
 Includes:
 
@@ -37,7 +38,7 @@ Min-Max scaling for numeric features
 
 Feature selection for clustering
 
-5.User-Friendly CLI Interface
+6.User-Friendly CLI Interface
 
 The system:
 
@@ -47,13 +48,14 @@ Takes user input
 
 Shows clean tabular output of recommendations
 
-6.Works with custom datasets
+7.Works with custom datasets
 
 As long as the dataset has:
 
 title, genre, rating, popularity, runtime
 
 …it will run smoothly.
+
 
 Technologies/Tools Used
 Programming Language
@@ -86,7 +88,7 @@ Command-line interface to run the script
 
 Steps to Install & Run the Project
 
-1 Install Python
+1. Install Python
 
 Ensure Python 3.7+ is installed.
 
@@ -94,13 +96,13 @@ Check using:
 
 python --version
 
-2️ Install Required Libraries
+2️. Install Required Libraries
 
 Run this in your terminal:
 
 pip install pandas numpy scikit-learn
 
-3️ Place the Dataset
+3️. Place the Dataset
 
 Save your dataset file as:
 
@@ -108,13 +110,13 @@ movies.csv
 
 Place it in the same folder as your .py script.
 
-4️ Run the Program
+4️. Run the Program
 
 Navigate to the folder where your file is saved and run:
 
 python movie_recommender.py
 
-5️ Provide Inputs When Prompted
+5️. Provide Inputs When Prompted
 
 The program will ask:
 
@@ -122,7 +124,7 @@ Enter preferred genre: Enter minimum rating (0–10): Enter minimum popularity:
 
 Enter values accordingly.
 
-6️ View Recommendations
+6️. View Recommendations
 
 The system prints the top movie recommendations in a well-formatted table.
 
@@ -131,7 +133,7 @@ The system prints the top movie recommendations in a well-formatted table.
 Instructions for Testing
 Here’s how to test your project based on the code:
 
-1️ Test with Valid Inputs
+1️. Test with Valid Inputs
 
 Choose genres that exist in the dataset, such as:
 
@@ -147,7 +149,7 @@ Provide reasonable rating and popularity values:
 
 rating: 7 popularity: 20
 
-2️ Test Fallback Cluster Logic
+2️. Test Fallback Cluster Logic
 
 Enter strict filters that return fewer than 5 movies.
 
@@ -161,7 +163,7 @@ This will trigger:
 
 Cluster-based recommendations
 
-3️ Test Invalid Genre Input
+3️. Test Invalid Genre Input
 
 Enter a genre not in the dataset:
 
@@ -171,7 +173,7 @@ Expected output:
 
 Genre not found in dataset! Available genres: [...]
 
-4️ Test Boundary Values
+4️. Test Boundary Values
 
 Examples:
 
@@ -181,7 +183,7 @@ popularity = 0
 
 runtime edge cases (though runtime is not user-input)
 
-5️ Test Dataset Integrity Errors
+5️. Test Dataset Integrity Errors
 
 Rename or remove the CSV file. Expected:
 
