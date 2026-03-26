@@ -1,28 +1,34 @@
 # AI-ML-Project-VITyarthi
 Overview of the Project
+
 This project is a Movie Recommendation System built using Python and machine learning techniques. It recommends movies to users based on their preferred genre, minimum rating, and popularity threshold. If too few movies match the filters, the system automatically uses K-Means clustering to find similar movies and provide fallback recommendations.
 
 The system operates on a CSV dataset containing movie titles, genres, ratings, popularity scores, and runtime. It includes preprocessing, feature scaling, genre encoding, clustering, and final recommendation generation through a simple command-line interface.
 
 Features
-Genre-based movie filtering
+
+1. Genre-based movie filtering
+
 Users can choose a genre, and the system returns movies from that category.
 
-Rule-based filtering
+2. Rule-based filtering
+
 Filters results by:
 
-Minimum rating
+3.Minimum rating
 
 Minimum popularity
 
-Automatic fallback using K-Means clustering
+3.Automatic fallback using K-Means clustering
+
 If filtered results are fewer than 5:
 
 The system identifies the dominant cluster for the chosen genre
 
 And shows similar movies based on cluster grouping
 
-Preprocessing Pipeline
+4.Preprocessing Pipeline
+
 Includes:
 
 Label Encoding for categorical genres
@@ -31,7 +37,8 @@ Min-Max scaling for numeric features
 
 Feature selection for clustering
 
-User-Friendly CLI Interface
+5.User-Friendly CLI Interface
+
 The system:
 
 Displays available genres
@@ -40,7 +47,8 @@ Takes user input
 
 Shows clean tabular output of recommendations
 
-Works with custom datasets
+6.Works with custom datasets
+
 As long as the dataset has:
 
 title, genre, rating, popularity, runtime
@@ -49,6 +57,7 @@ title, genre, rating, popularity, runtime
 
 Technologies/Tools Used
 Programming Language
+
 
 Python 3.x
 
@@ -74,7 +83,9 @@ CSV dataset
 
 Command-line interface to run the script
 
+
 Steps to Install & Run the Project
+
 1 Install Python
 
 Ensure Python 3.7+ is installed.
@@ -114,6 +125,8 @@ Enter values accordingly.
 6️ View Recommendations
 
 The system prints the top movie recommendations in a well-formatted table.
+
+
 
 Instructions for Testing
 Here’s how to test your project based on the code:
